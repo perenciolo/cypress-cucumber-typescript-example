@@ -1,10 +1,11 @@
-# cypress-cucumber-typescript-example
-Example of using Cypress with Cucumber and TypeScript
+# Percy + Cypress + Cucumber + Typescript Example
 
-All the configuration is in [cypress/plugins/index.js](cypress/plugins/index.js)
+Percy visual testing integration with Cypress, Cucumber and TypeScript
 
-TypeScript step definitions are in [cypress/integration/passWithTypescript](cypress/integration/passWithTypescript)
+For working properly you need to copy `.env.example` to `.env` and insert the correct `PERCY_TOKEN` associated with your account of Percy
 
-(I'm using the nonGlobalStepDefinitions configuration in the [package.json](package.json) )
+To run cypress:
 
-You can also use our Cucumber plugin with TypeScript and webpack: [https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/](https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/)
+> in development mode run `make component-test-dev`
+
+> in headless mode run `make component-test`
