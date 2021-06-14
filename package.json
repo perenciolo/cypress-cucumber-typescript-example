@@ -4,14 +4,12 @@
   "description": "Example of how to use Cypress with Cucumber and TypeScript",
   "main": "index.js",
   "scripts": {
-    "component-test": "PERCY_TOKEN=$(grep PERCY_TOKEN .env | cut -d '=' -f2) percy exec -- cypress run",
-    "component-test-dev": "percy exec -- cypress open"
+    "component-test": "cypress run",
+    "component-test-dev": "cypress open"
   },
   "author": "Gustavo Perenciolo",
   "license": "ISC",
   "dependencies": {
-    "@percy/cli": "^1.0.0-beta.52",
-    "@percy/cypress": "^3.1.0",
     "axios": "^0.21.1",
     "cross-env": "^7.0.3",
     "cross-var": "^1.1.0",
