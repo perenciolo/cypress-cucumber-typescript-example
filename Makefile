@@ -1,7 +1,7 @@
-.PHONY: component-test
-component-test:
+.PHONY: component-tests
+component-tests:
 	yarn component-test
 
-.PHONY: component-test-dev
-component-test-dev:
+.PHONY: component-tests-dev
+component-tests-dev:
 	yarn component-test-dev
